@@ -43,6 +43,7 @@ abi = json.loads(
 # for ganache local
 # w3 = Web3(Web3.HTTPProvider("HTTP://127.0.0.1:7545"))
 # chain_id = 1337
+# 这个地址与key是ganache上的
 # my_address = "0x74Bb2A88633893052162c94Cb074CC90Bc06bcEE"
 # private_key = "04a533bfb5716ae2d025944ef62674f5fbb0c4d56bce6b0afb7ebac8c6dde5ba"
 
@@ -51,6 +52,7 @@ abi = json.loads(
 w3 = Web3(Web3.HTTPProvider(
     os.getenv("RINKEBY_RPC_URL")))
 chain_id = 4
+# 这个地址是 metamask 的地址与key
 my_address = "0x89425Bfac90214a7F8C1588434E15858C5493Fb1"
 private_key = "96f8cef0e6961056919dd04678f54de3eeedd285bdd717ae744e0941efd49a49"
 
