@@ -5,7 +5,7 @@ dependencies:
   - smartcontractkit/chainlink-brownie-contracts@1.1.1
 compiler:
   solc:
-    remapping:
+    remappings:
       # 告诉brownie从编译的时候chanlink要映射成smartcontractkit/chainlink-brownie-contracts@1.1.1这个
       - '@chainlink=smartcontractkit/chainlink-brownie-contracts@1.1.1'
 dotenv: .env
