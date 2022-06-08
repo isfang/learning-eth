@@ -10,7 +10,7 @@ from brownie import SimpleCollectible
 sample_token_uri = "https://ipfs.io/ipfs/Qmd9MCGtdVz2miNumBHDbvj8bigSgTwnr4SbyH6DNnpWdt?filename=0-PUG.json"
 
 
-def deploy():
+def deploy_create():
     account = get_account()
 
     simple = SimpleCollectible.deploy({"from": account})
@@ -26,4 +26,4 @@ def deploy():
 
 
 def main():
-    deploy()
+    deploy_create()
